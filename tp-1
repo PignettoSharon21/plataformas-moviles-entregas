@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Abstract Wikipedia (Wikipedia abstracta)</title>
+</head>
+<body>
+
+  <h1>Abstract Wikipedia (Wikipedia abstracta)</h1>
+
+  <p><strong>Abstract Wikipedia</strong> (traducible al español como <em>Wikipedia abstracta</em>) es un proyecto en desarrollo de la Fundación Wikimedia cuyo objetivo es utilizar <a href="https://es.wikipedia.org/wiki/Wikifunctions">Wikifunctions</a> para crear una versión de Wikipedia independiente de cualquier idioma, utilizando datos estructurados.</p>
+
+  <h2>Historia</h2>
+  <p>Concebida inicialmente en 2020 (con una propuesta precursora en 2013), Wikipedia abstracta ha estado en desarrollo desde entonces. Su proyecto asociado, Wikifunctions, se lanzó en 2023. :contentReference[oaicite:2]{index=2}</p>
+
+  <h3>Concepción (2013–2020)</h3>
+  <p>El 7 de agosto de 2013, Denny Vrandečić, cofundador de Wikidata, sugirió una extensión del sistema de plantillas que evoluciona a lo que hoy se conoce como Wikipedia abstracta. La propuesta se formalizó en abril de 2020 como Wikilambda y fue aprobada en mayo de 2020, recibiendo su nombre oficial en julio del mismo año. :contentReference[oaicite:3]{index=3}</p>
+
+  <h2>Componentes técnicos</h2>
+  <ol>
+    <li><strong>Constructores</strong>: plantillas para generar declaraciones abstractas, preferiblemente alojados en Wikifunctions.</li>
+    <li><strong>Contenido</strong>: llamadas abstractas a esos constructores, distribuidas a través de Wikidata.</li>
+    <li><strong>Renderizadores</strong>: funciones específicas por idioma, alojadas en Wikifunctions, que traducen el contenido abstracto a lenguaje natural. :contentReference[oaicite:4]{index=4}</li>
+  </ol>
+
+  <h2>Integración con Wikipedia</h2>
+  <p>Cada edición de Wikipedia podrá incorporar Abstract Wikipedia de tres maneras:</p>
+  <ul>
+    <li><em>Implícita</em>: a través de una página especial (<code>Especial:Resumen</code>), mostrando contenido generado automáticamente, enlazable y buscable.</li>
+    <li><em>Explícita</em>: creando artículos “virtuales” mediante enlaces sitelink en Wikidata.</li>
+    <li>No integrando Abstract Wikipedia. :contentReference[oaicite:5]{index=5}</li>
+  </ul>
+
+  <h2>Objetivos y relevancia</h2>
+  <p>El proyecto busca reducir la brecha lingüística en Wikipedia, dando acceso a artículos en decenas de idiomas menos representados. Pretende acelerar la paridad y ampliar el acceso global al conocimiento libre. :contentReference[oaicite:6]{index=6}</p>
+
+  <h2>Lanzamiento y estado actual</h2>
+  <dl>
+    <dt>2020–2021</dt><dd>Discusiones, prototipos y aprobación oficial del proyecto.</dd>
+    <dt>2023</dt><dd>Lanzamiento público de Wikifunctions en producción (julio).</dd>
+  </dl>
+  <p>Wikifunctions se lanzó oficialmente el 26 de julio de 2023 y es la base del sistema de funciones para Abstract Wikipedia. :contentReference[oaicite:7]{index=7}</p>
+
+  <h2>Referencias clave</h2>
+  <ul>
+    <li>Abstract Wikipedia/Plan – descripción arquitectónica del proyecto. :contentReference[oaicite:8]{index=8}</li>
+    <li>Anuncio de julio de 2020 – aprobación unánime por la Junta de la Fundación Wikimedia. :contentReference[oaicite:9]{index=9}</li>
+    <li>Resumen del proyecto y cronograma en Meta‑Wiki. :contentReference[oaicite:10]{index=10}</li>
+    <li>Artículo de la Fundación Wikimedia explicando la visión global del proyecto. :contentReference[oaicite:11]{index=11}</li>
+    <li>Ficha técnica sobre Wikifunctions y su rol dentro del ecosistema. :contentReference[oaicite:12]{index=12}</li>
+  </ul>
+
+  <h2>Enlaces externos</h2>
+  <ul>
+    <li><a href="https://es.wikipedia.org/wiki/Abstract_Wikipedia" target="_blank">Artículo en Wikipedia en español</a></li>
+    <li><a href="https://meta.wikimedia.org/wiki/Abstract_Wikipedia" target="_blank">Página del proyecto en Meta‑Wiki</a></li>
+  </ul>
+
+</body>
+</html>
