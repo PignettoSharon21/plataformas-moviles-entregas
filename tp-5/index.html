@@ -13,39 +13,37 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
-      <a class="navbar-brand" href="#">TP5 - Git</a>
+      <a class="navbar-brand" href="#">TP5 - Bootstrap</a>
     </div>
   </nav>
 
-  <div class="container mb-5">
+  <div class="container">
 
     <h1 class="text-center">Control de Versiones con Git</h1>
 
-    <p class="fs-4 mt-4">
-      <strong>Git</strong> es un sistema de control de versiones distribuido, ampliamente utilizado en el desarrollo de
-      software moderno. Fue creado para gestionar proyectos de forma rápida, eficiente y colaborativa.
-    </p>
+    <p class="fs-4 mt-4"><strong>Git</strong> es un sistema de control de versiones distribuido, ampliamente utilizado en el desarrollo de
+      software moderno. Fue creado para gestionar proyectos de forma rápida, eficiente y colaborativa.</p>
 
     <h2 class="mt-5">Comandos más populares de Git</h2>
 
-    <div class="shadow p-3 mb-5 bg-body rounded">
-      <div class="list-group">
-        <div class="list-group-item"><code>git init</code> - Inicializa un nuevo repositorio Git en el directorio actual.</div>
-        <div class="list-group-item"><code>git clone [url]</code> - Clona un repositorio remoto en tu máquina local.</div>
-        <div class="list-group-item"><code>git status</code> - Muestra el estado del repositorio.</div>
-        <div class="list-group-item"><code>git add [archivo]</code> - Agrega archivos al área de staging.</div>
-        <div class="list-group-item"><code>git commit -m "[mensaje]"</code> - Crea un commit.</div>
-        <div class="list-group-item"><code>git push</code> - Sube los cambios al repositorio remoto.</div>
-        <div class="list-group-item"><code>git pull</code> - Trae y mezcla cambios del remoto.</div>
-        <div class="list-group-item"><code>git checkout [rama]</code> - Cambia de rama o crea una nueva.</div>
-      </div>
+    <div class="shadow p-3 mb-4 bg-white rounded">
+      <ul class="list-group">
+        <li class="list-group-item"><code>git init</code> - Inicializa un nuevo repositorio Git en el directorio actual. Este comando crea un repositorio vacío.</li>
+        <li class="list-group-item"><code>git clone [url]</code> - Clona un repositorio remoto en tu máquina local. Ejemplo: <code>git clone https://github.com/usuario/repositorio.git</code>.</li>
+        <li class="list-group-item"><code>git status</code> - Muestra el estado del repositorio: archivos modificados, nuevos archivos no rastreados, cambios preparados para el commit, etc.</li>
+        <li class="list-group-item"><code>git add [archivo]</code> - Agrega un archivo o cambios específicos al área de preparación (staging area) para el commit.</li>
+        <li class="list-group-item"><code>git commit -m "[mensaje]"</code> - Crea un commit con los archivos añadidos al área de preparación, agregando un mensaje descriptivo.</li>
+        <li class="list-group-item"><code>git push</code> - Sube los cambios locales al repositorio remoto. Generalmente se usa después de un commit para actualizar el repositorio remoto.</li>
+        <li class="list-group-item"><code>git pull</code> - Obtiene y combina los cambios del repositorio remoto al local. Equivalente a <code>git fetch</code> seguido de <code>git merge</code>.</li>
+        <li class="list-group-item"><code>git checkout [rama]</code> - Cambia a una rama específica del repositorio. Si la rama no existe, se puede crear con <code>git checkout -b [rama]</code>.</li>
+      </ul>
     </div>
 
     <h2>Comparación con otros sistemas</h2>
 
     <div class="table-responsive">
-      <table class="table table-striped table-bordered table-hover table-dark">
-        <thead>
+      <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
           <tr>
             <th>Sistema</th>
             <th>Tipo</th>
@@ -87,7 +85,7 @@
       </div>
 
       <div class="mb-3">
-        <label for="experiencia" class="form-label">¿Qué usás más?</label>
+        <label for="experiencia" class="form-label">¿Qué usás más?</label><br>
         <select id="experiencia" name="experiencia" class="form-select">
           <option value="git">Git</option>
           <option value="github">Git + GitHub</option>
@@ -96,34 +94,34 @@
         </select>
       </div>
 
-      <input type="submit" value="Enviar" class="btn btn-primary w-100 mt-3">
+      <input type="submit" value="Enviar" class="btn btn-success w-100">
     </form>
 
     <div class="text-center mt-5">
-      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#infoModal">
-        Ver dato curioso
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalGit">
+        Ver un dato curioso
       </button>
     </div>
 
-  </div>
-
-  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="infoModalLabel">Dato curioso</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          Git fue creado por Linus Torvalds, el mismo que creó Linux 😎
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    <div class="modal fade" id="modalGit" tabindex="-1" aria-labelledby="modalGitLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalGitLabel">Dato curioso sobre Git</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            ¿Sabías que Git fue creado por Linus Torvalds en solo 10 días?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+  </div>
 </body>
 </html>
+
 
