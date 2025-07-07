@@ -4,7 +4,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 799px) {
   h1 {
     text-align: center;
   }
@@ -16,7 +16,7 @@
   }
 }
 
-@media (min-height: 100px) {
+@media (min-height: 200px) {
   h1 {
     background-color: #345;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-st@media screen and (min-width: 800px) and (max-width: 899px) {
+@media screen and (min-width: 800px) and (max-width: 899px) {
   img {
     display: none;
   }
@@ -60,3 +60,4 @@ st@media screen and (min-width: 800px) and (max-width: 899px) {
     background-color: #667;
   }
 }
+
